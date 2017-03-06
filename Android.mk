@@ -28,7 +28,7 @@ LOCAL_AAPT_FLAGS := \
 
 LOCAL_AAPT_FLAGS += --rename-manifest-package org.lineageos.updater
 
-LOCAL_PACKAGE_NAME := CMUpdater
+LOCAL_PACKAGE_NAME := HexCenter
 
 LOCAL_PROGUARD_FLAGS := -include $(LOCAL_PATH)/proguard.flags
 
