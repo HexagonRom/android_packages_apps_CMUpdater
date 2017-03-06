@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.receiver;
+package com.DroidVnTeam.HexCenter.receiver;
 
 import android.app.DownloadManager;
 import android.app.StatusBarManager;
@@ -19,12 +19,12 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.misc.UpdateInfo;
-import com.cyanogenmod.updater.service.DownloadCompleteIntentService;
-import com.cyanogenmod.updater.service.DownloadService;
-import com.cyanogenmod.updater.utils.Utils;
+import com.DroidVnTeam.HexCenter.R;
+import com.DroidVnTeam.HexCenter.misc.Constants;
+import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
+import com.DroidVnTeam.HexCenter.service.DownloadCompleteIntentService;
+import com.DroidVnTeam.HexCenter.service.DownloadService;
+import com.DroidVnTeam.HexCenter.utils.Utils;
 
 import java.io.IOException;
 

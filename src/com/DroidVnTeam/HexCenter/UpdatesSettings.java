@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project (DvTonder)
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017 The HexagonRom Project
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater;
+package com.DroidVnTeam.HexCenter;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -42,13 +42,13 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.misc.State;
-import com.cyanogenmod.updater.misc.UpdateInfo;
-import com.cyanogenmod.updater.receiver.DownloadReceiver;
-import com.cyanogenmod.updater.service.UpdateCheckService;
-import com.cyanogenmod.updater.utils.UpdateFilter;
-import com.cyanogenmod.updater.utils.Utils;
+import com.DroidVnTeam.HexCenter.misc.Constants;
+import com.DroidVnTeam.HexCenter.misc.State;
+import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
+import com.DroidVnTeam.HexCenter.receiver.DownloadReceiver;
+import com.DroidVnTeam.HexCenter.service.UpdateCheckService;
+import com.DroidVnTeam.HexCenter.utils.UpdateFilter;
+import com.DroidVnTeam.HexCenter.utils.Utils;
 
 import org.cyanogenmod.internal.util.ScreenType;
 

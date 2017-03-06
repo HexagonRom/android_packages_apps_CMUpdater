@@ -7,13 +7,13 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.receiver;
+package com.DroidVnTeam.HexCenter.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.cyanogenmod.updater.UpdatesActivity;
+import com.DroidVnTeam.HexCenter.UpdatesActivity;
 
 public class NotificationClickReceiver extends BroadcastReceiver{
     @Override

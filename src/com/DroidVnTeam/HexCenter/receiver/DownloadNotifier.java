@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.receiver;
+package com.DroidVnTeam.HexCenter.receiver;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -15,8 +15,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.misc.UpdateInfo;
+import com.DroidVnTeam.HexCenter.R;
+import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
 
 import java.io.File;
 

@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.service;
+package com.DroidVnTeam.HexCenter.service;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
@@ -28,16 +28,16 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.UpdateApplication;
-import com.cyanogenmod.updater.UpdatesActivity;
-import com.cyanogenmod.updater.requests.UpdatesJsonObjectRequest;
-import com.cyanogenmod.updater.UpdatesSettings;
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.misc.State;
-import com.cyanogenmod.updater.misc.UpdateInfo;
-import com.cyanogenmod.updater.receiver.DownloadReceiver;
-import com.cyanogenmod.updater.utils.Utils;
+import com.DroidVnTeam.HexCenter.R;
+import com.DroidVnTeam.HexCenter.UpdateApplication;
+import com.DroidVnTeam.HexCenter.UpdatesActivity;
+import com.DroidVnTeam.HexCenter.requests.UpdatesJsonObjectRequest;
+import com.DroidVnTeam.HexCenter.UpdatesSettings;
+import com.DroidVnTeam.HexCenter.misc.Constants;
+import com.DroidVnTeam.HexCenter.misc.State;
+import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
+import com.DroidVnTeam.HexCenter.receiver.DownloadReceiver;
+import com.DroidVnTeam.HexCenter.utils.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

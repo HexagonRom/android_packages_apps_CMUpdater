@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.utils;
+package com.DroidVnTeam.HexCenter.utils;
 
 import android.app.AlarmManager;
 import android.app.NotificationManager;
@@ -29,9 +29,9 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.cyanogenmod.updater.R;
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.service.UpdateCheckService;
+import com.DroidVnTeam.HexCenter.R;
+import com.DroidVnTeam.HexCenter.misc.Constants;
+import com.DroidVnTeam.HexCenter.service.UpdateCheckService;
 
 import java.io.File;
 import java.io.IOException;

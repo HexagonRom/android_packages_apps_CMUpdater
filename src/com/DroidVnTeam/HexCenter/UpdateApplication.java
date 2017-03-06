@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project (DvTonder)
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017 The HexagonRom Project
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater;
+package com.DroidVnTeam.HexCenter;
 
 import android.app.Activity;
 import android.app.Application;

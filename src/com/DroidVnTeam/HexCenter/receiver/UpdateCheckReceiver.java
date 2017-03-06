@@ -1,6 +1,6 @@
 /*
 * Copyright (C) 2012 The CyanogenMod Project
-* Copyright (C) 2017 The LineageOS Project
+* Copyright (C) 2017 The HexagonRom Project
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater.receiver;
+package com.DroidVnTeam.HexCenter.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,9 +18,9 @@ import android.net.ConnectivityManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.cyanogenmod.updater.misc.Constants;
-import com.cyanogenmod.updater.service.UpdateCheckService;
-import com.cyanogenmod.updater.utils.Utils;
+import com.DroidVnTeam.HexCenter.misc.Constants;
+import com.DroidVnTeam.HexCenter.service.UpdateCheckService;
+import com.DroidVnTeam.HexCenter.utils.Utils;
 
 public class UpdateCheckReceiver extends BroadcastReceiver {
     private static final String TAG = "UpdateCheckReceiver";

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017 The HexagonRom Project
  *
  * * Licensed under the GNU GPLv2 license
  *
@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.cyanogenmod.updater;
+package com.DroidVnTeam.HexCenter;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,8 +26,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.cyanogenmod.updater.misc.UpdateInfo;
-import com.cyanogenmod.updater.utils.Utils;
+import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
+import com.DroidVnTeam.HexCenter.utils.Utils;
 
 import java.io.File;
 
