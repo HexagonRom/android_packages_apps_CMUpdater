@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.service;
+package com.hexagon.updater.service;
 
 import android.app.DownloadManager;
 import android.app.IntentService;
@@ -25,13 +25,13 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 
-import com.DroidVnTeam.HexCenter.R;
-import com.DroidVnTeam.HexCenter.UpdateApplication;
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
-import com.DroidVnTeam.HexCenter.receiver.DownloadReceiver;
-import com.DroidVnTeam.HexCenter.requests.UpdatesJsonObjectRequest;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.R;
+import com.hexagon.updater.UpdateApplication;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.misc.UpdateInfo;
+import com.hexagon.updater.receiver.DownloadReceiver;
+import com.hexagon.updater.requests.UpdatesJsonObjectRequest;
+import com.hexagon.updater.utils.Utils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -73,7 +73,7 @@ public class DownloadService extends IntentService
     }
 
     private String getServerUri() {
-        String propertyUri = SystemProperties.get("cm.updater.uri");
+        String propertyUri = SystemProperties.get("hex.updater.uri");
         if (!TextUtils.isEmpty(propertyUri)) {
             return propertyUri;
         }

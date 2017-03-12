@@ -64,7 +64,7 @@
   <string name="delete_updates_noFolder_message">업데이트 폴더를 찾을 수 없습니다</string>
   <string name="delete_updates_success_message">다운로드된 업데이트를 모두 삭제하였습니다</string>
   <!-- Header -->
-  <string name="header_os">HexagonRom\n%1$s</string>
+  <string name="header_os">HexagonRom\nNougat</string>
   <string name="header_summary">%1$s\n%2$s • Android %3$s\n%4$s</string>
   <string name="sysinfo_last_check">마지막 확인</string>
   <!-- Just reorder the chars, do not add / remove them (or the app will crash). MMMM = Month, dd = day, yyyy = year. Example: MMMM dd, yyyy -> January 01, 1970 -->

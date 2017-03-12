@@ -64,7 +64,7 @@
   <string name="delete_updates_noFolder_message">Папка з оновленнями не знайдена</string>
   <string name="delete_updates_success_message">Всі завантажені оновлення видалено</string>
   <!-- Header -->
-  <string name="header_os">HexagonRom\n%1$s</string>
+  <string name="header_os">HexagonRom\nNougat</string>
   <string name="header_summary">%1$s\n%2$s • Android %3$s\n%4$s</string>
   <string name="sysinfo_last_check">Остання перевірка</string>
   <!-- Just reorder the chars, do not add / remove them (or the app will crash). MMMM = Month, dd = day, yyyy = year. Example: MMMM dd, yyyy -> January 01, 1970 -->

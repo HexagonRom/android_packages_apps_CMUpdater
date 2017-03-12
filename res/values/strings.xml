@@ -10,8 +10,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General strings -->
-    <string name="app_name">HexCenter</string>
-    <string name="display_name">Hexagon update</string>
+    <string name="app_name">Updater</string>
+    <string name="display_name">Updates</string>
     <string name="unknown">Unknown</string>
 
     <!-- Menu and dialog box strings -->
@@ -72,7 +72,7 @@
     <string name="delete_updates_success_message">All downloaded updates deleted</string>
 
     <!-- Header -->
-    <string name="header_os">HexagonRom\n%1$s</string>
+    <string name="header_os">HexagonRom\nNougat</string>
     <string name="header_summary">%1$s\n%2$s • Android %3$s\n%4$s</string>
     <string name="sysinfo_last_check">Last checked</string>
 

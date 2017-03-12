@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.service;
+package com.hexagon.updater.service;
 
 import android.app.DownloadManager;
 import android.app.IntentService;
@@ -19,13 +19,13 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.os.ParcelFileDescriptor;
 
-import com.DroidVnTeam.HexCenter.R;
-import com.DroidVnTeam.HexCenter.UpdatesActivity;
-import com.DroidVnTeam.HexCenter.UpdateApplication;
-import com.DroidVnTeam.HexCenter.UpdatesSettings;
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.receiver.DownloadNotifier;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.R;
+import com.hexagon.updater.UpdatesActivity;
+import com.hexagon.updater.UpdateApplication;
+import com.hexagon.updater.UpdatesSettings;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.receiver.DownloadNotifier;
+import com.hexagon.updater.utils.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -7,14 +7,14 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.misc;
+package com.hexagon.updater.misc;
 
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.text.TextUtils;
 
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.utils.Utils;
 
 import java.io.File;
 import java.io.Serializable;

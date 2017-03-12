@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.receiver;
+package com.hexagon.updater.receiver;
 
 import android.app.DownloadManager;
 import android.app.StatusBarManager;
@@ -19,24 +19,24 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.DroidVnTeam.HexCenter.R;
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
-import com.DroidVnTeam.HexCenter.service.DownloadCompleteIntentService;
-import com.DroidVnTeam.HexCenter.service.DownloadService;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.R;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.misc.UpdateInfo;
+import com.hexagon.updater.service.DownloadCompleteIntentService;
+import com.hexagon.updater.service.DownloadService;
+import com.hexagon.updater.utils.Utils;
 
 import java.io.IOException;
 
 public class DownloadReceiver extends BroadcastReceiver{
     private static final String TAG = "DownloadReceiver";
 
-    public static final String ACTION_START_DOWNLOAD = "com.cyanogenmod.cmupdater.action.START_DOWNLOAD";
+    public static final String ACTION_START_DOWNLOAD = "com.hexagon.cmupdater.action.START_DOWNLOAD";
     public static final String EXTRA_UPDATE_INFO = "update_info";
 
-    public static final String ACTION_DOWNLOAD_STARTED = "com.cyanogenmod.cmupdater.action.DOWNLOAD_STARTED";
+    public static final String ACTION_DOWNLOAD_STARTED = "com.hexagon.cmupdater.action.DOWNLOAD_STARTED";
 
-    static final String ACTION_INSTALL_UPDATE = "com.cyanogenmod.cmupdater.action.INSTALL_UPDATE";
+    static final String ACTION_INSTALL_UPDATE = "com.hexagon.cmupdater.action.INSTALL_UPDATE";
     static final String EXTRA_FILENAME = "filename";
 
     @Override

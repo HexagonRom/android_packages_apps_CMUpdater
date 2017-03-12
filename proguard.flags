@@ -1,4 +1,4 @@
--keep class com.DroidVnTeam.HexCenter.UpdatesSettings {
+-keep class com.hexagon.updater.UpdatesSettings {
   *;
 }
 -keep class android.support.design.widget.** { *; }

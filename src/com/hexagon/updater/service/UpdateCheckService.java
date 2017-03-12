@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.service;
+package com.hexagon.updater.service;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
@@ -28,16 +28,16 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 
-import com.DroidVnTeam.HexCenter.R;
-import com.DroidVnTeam.HexCenter.UpdateApplication;
-import com.DroidVnTeam.HexCenter.UpdatesActivity;
-import com.DroidVnTeam.HexCenter.requests.UpdatesJsonObjectRequest;
-import com.DroidVnTeam.HexCenter.UpdatesSettings;
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.misc.State;
-import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
-import com.DroidVnTeam.HexCenter.receiver.DownloadReceiver;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.R;
+import com.hexagon.updater.UpdateApplication;
+import com.hexagon.updater.UpdatesActivity;
+import com.hexagon.updater.requests.UpdatesJsonObjectRequest;
+import com.hexagon.updater.UpdatesSettings;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.misc.State;
+import com.hexagon.updater.misc.UpdateInfo;
+import com.hexagon.updater.receiver.DownloadReceiver;
+import com.hexagon.updater.utils.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -59,11 +59,11 @@ public class UpdateCheckService extends IntentService
     private static final boolean TESTING_DOWNLOAD = false;
 
     // request actions
-    public static final String ACTION_CHECK = "com.cyanogenmod.cmupdater.action.CHECK";
-    public static final String ACTION_CANCEL_CHECK = "com.cyanogenmod.cmupdater.action.CANCEL_CHECK";
+    public static final String ACTION_CHECK = "com.hexagon.cmupdater.action.CHECK";
+    public static final String ACTION_CANCEL_CHECK = "com.hexagon.cmupdater.action.CANCEL_CHECK";
 
     // broadcast actions
-    public static final String ACTION_CHECK_FINISHED = "com.cyanogenmod.cmupdater.action.UPDATE_CHECK_FINISHED";
+    public static final String ACTION_CHECK_FINISHED = "com.hexagon.cmupdater.action.UPDATE_CHECK_FINISHED";
     // extra for ACTION_CHECK_FINISHED: total amount of found updates
     public static final String EXTRA_UPDATE_COUNT = "update_count";
     // extra for ACTION_CHECK_FINISHED: amount of updates that are newer than what is installed
@@ -208,24 +208,27 @@ public class UpdateCheckService extends IntentService
         String type;
         switch (Utils.getUpdateType()) {
             case Constants.UPDATE_TYPE_SNAPSHOT:
-                type = Constants.CM_RELEASETYPE_SNAPSHOT;
+                type = Constants.HEX_RELEASETYPE_SNAPSHOT;
                 break;
             case Constants.UPDATE_TYPE_NIGHTLY:
-                type = Constants.CM_RELEASETYPE_NIGHTLY;
+                type = Constants.HEX_RELEASETYPE_NIGHTLY;
                 break;
             case Constants.UPDATE_TYPE_EXPERIMENTAL:
-                type = Constants.CM_RELEASETYPE_EXPERIMENTAL;
+                type = Constants.HEX_RELEASETYPE_EXPERIMENTAL;
                 break;
             case Constants.UPDATE_TYPE_UNOFFICIAL:
             default:
-                type = Constants.CM_RELEASETYPE_UNOFFICIAL;
+                type = Constants.HEX_RELEASETYPE_UNOFFICIAL;
+                break;
+            case Constants.UPDATE_TYPE_OFFICIAL:
+                type = Constants.HEX_RELEASETYPE_OFFICIAL;
                 break;
         }
         return type.toLowerCase();
     }
 
     private URI getServerURI() {
-        String updateUri = SystemProperties.get("cm.updater.uri");
+        String updateUri = SystemProperties.get("hex.updater.uri");
         if (TextUtils.isEmpty(updateUri)) {
             updateUri = getString(R.string.conf_update_server_url_def);
         }

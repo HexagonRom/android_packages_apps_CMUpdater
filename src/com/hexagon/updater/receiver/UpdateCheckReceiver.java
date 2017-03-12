@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.receiver;
+package com.hexagon.updater.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,9 +18,9 @@ import android.net.ConnectivityManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.service.UpdateCheckService;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.service.UpdateCheckService;
+import com.hexagon.updater.utils.Utils;
 
 public class UpdateCheckReceiver extends BroadcastReceiver {
     private static final String TAG = "UpdateCheckReceiver";

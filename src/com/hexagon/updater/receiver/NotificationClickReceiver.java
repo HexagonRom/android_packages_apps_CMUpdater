@@ -7,13 +7,13 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.receiver;
+package com.hexagon.updater.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.DroidVnTeam.HexCenter.UpdatesActivity;
+import com.hexagon.updater.UpdatesActivity;
 
 public class NotificationClickReceiver extends BroadcastReceiver{
     @Override

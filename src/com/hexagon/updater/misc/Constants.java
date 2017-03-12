@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.misc;
+package com.hexagon.updater.misc;
 
 public class Constants {
     // Download related
@@ -35,11 +35,13 @@ public class Constants {
     public static final int UPDATE_TYPE_NIGHTLY = 1;
     public static final int UPDATE_TYPE_EXPERIMENTAL = 2;
     public static final int UPDATE_TYPE_UNOFFICIAL = 3;
+    public static final int UPDATE_TYPE_OFFICIAL = 4;
 
-    // ro.cm.releasetype values
-    public static final String PROPERTY_CM_RELEASETYPE = "ro.cm.releasetype";
-    public static final String CM_RELEASETYPE_SNAPSHOT = "SNAPSHOT";
-    public static final String CM_RELEASETYPE_NIGHTLY = "NIGHTLY";
-    public static final String CM_RELEASETYPE_EXPERIMENTAL = "EXPERIMENTAL";
-    public static final String CM_RELEASETYPE_UNOFFICIAL = "UNOFFICIAL";
+    // ro.hex.releasetype values
+    public static final String PROPERTY_HEX_RELEASETYPE = "ro.hexagon.build.type";
+    public static final String HEX_RELEASETYPE_SNAPSHOT = "SNAPSHOT";
+    public static final String HEX_RELEASETYPE_NIGHTLY = "NIGHTLY";
+    public static final String HEX_RELEASETYPE_EXPERIMENTAL = "EXPERIMENTAL";
+    public static final String HEX_RELEASETYPE_UNOFFICIAL = "UNOFFICIAL";
+    public static final String HEX_RELEASETYPE_OFFICIAL = "OFFICIAL";
 }

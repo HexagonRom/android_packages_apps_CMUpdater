@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter;
+package com.hexagon.updater;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,8 +26,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.misc.UpdateInfo;
+import com.hexagon.updater.utils.Utils;
 
 import java.io.File;
 
@@ -111,14 +111,14 @@ public class UpdatePreference extends Preference implements OnClickListener, OnL
         final String mBuildDate = Utils.getInstalledBuildDateLocalized(mContext, mBuildName[2]);
         String mApi;
         switch (mBuildName[1]) {
-            case "13.0":
+            case "v1.":
                 mApi = "6.0.1";
                 break;
-            case "14.1":
+            case "v2.":
                 mApi = "7.1.1";
                 break;
             default:
-                mApi = "???";
+                mApi = "7.1.1";
                 break;
         }
 

@@ -6,7 +6,7 @@
  * The text of the license can be found in the LICENSE file
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
-package com.DroidVnTeam.HexCenter;
+package com.hexagon.updater;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,8 +22,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.utils.Utils;
 
 import java.util.Date;
 

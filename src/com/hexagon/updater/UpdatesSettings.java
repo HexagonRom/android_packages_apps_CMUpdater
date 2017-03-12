@@ -8,7 +8,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter;
+package com.hexagon.updater;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -42,13 +42,13 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.misc.State;
-import com.DroidVnTeam.HexCenter.misc.UpdateInfo;
-import com.DroidVnTeam.HexCenter.receiver.DownloadReceiver;
-import com.DroidVnTeam.HexCenter.service.UpdateCheckService;
-import com.DroidVnTeam.HexCenter.utils.UpdateFilter;
-import com.DroidVnTeam.HexCenter.utils.Utils;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.misc.State;
+import com.hexagon.updater.misc.UpdateInfo;
+import com.hexagon.updater.receiver.DownloadReceiver;
+import com.hexagon.updater.service.UpdateCheckService;
+import com.hexagon.updater.utils.UpdateFilter;
+import com.hexagon.updater.utils.Utils;
 
 import org.cyanogenmod.internal.util.ScreenType;
 

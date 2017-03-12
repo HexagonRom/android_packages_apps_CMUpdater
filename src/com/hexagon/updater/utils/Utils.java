@@ -7,7 +7,7 @@
  * or at https://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-package com.DroidVnTeam.HexCenter.utils;
+package com.hexagon.updater.utils;
 
 import android.app.AlarmManager;
 import android.app.NotificationManager;
@@ -29,9 +29,9 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.DroidVnTeam.HexCenter.R;
-import com.DroidVnTeam.HexCenter.misc.Constants;
-import com.DroidVnTeam.HexCenter.service.UpdateCheckService;
+import com.hexagon.updater.R;
+import com.hexagon.updater.misc.Constants;
+import com.hexagon.updater.service.UpdateCheckService;
 
 import java.io.File;
 import java.io.IOException;
@@ -56,11 +56,11 @@ public class Utils {
     }
 
     public static String getDeviceType() {
-        return SystemProperties.get("ro.cm.device");
+        return SystemProperties.get("ro.hexagon.device");
     }
 
     public static String getInstalledVersion() {
-        return SystemProperties.get("ro.cm.version");
+        return SystemProperties.get("ro.modversion");
     }
 
     public static int getInstalledApiLevel() {
@@ -155,25 +155,28 @@ public class Utils {
     public static int getUpdateType() {
         String releaseType;
         try {
-            releaseType = SystemProperties.get(Constants.PROPERTY_CM_RELEASETYPE);
+            releaseType = SystemProperties.get(Constants.PROPERTY_HEX_RELEASETYPE);
         } catch (IllegalArgumentException e) {
-            releaseType = Constants.CM_RELEASETYPE_UNOFFICIAL;
+            releaseType = Constants.HEX_RELEASETYPE_UNOFFICIAL;
         }
 
         int updateType;
         switch (releaseType) {
-            case Constants.CM_RELEASETYPE_SNAPSHOT:
+            case Constants.HEX_RELEASETYPE_SNAPSHOT:
                 updateType = Constants.UPDATE_TYPE_SNAPSHOT;
                 break;
-            case Constants.CM_RELEASETYPE_NIGHTLY:
+            case Constants.HEX_RELEASETYPE_NIGHTLY:
                 updateType = Constants.UPDATE_TYPE_NIGHTLY;
                 break;
-            case Constants.CM_RELEASETYPE_EXPERIMENTAL:
+            case Constants.HEX_RELEASETYPE_EXPERIMENTAL:
                 updateType = Constants.UPDATE_TYPE_EXPERIMENTAL;
                 break;
-            case Constants.CM_RELEASETYPE_UNOFFICIAL:
+            case Constants.HEX_RELEASETYPE_UNOFFICIAL:
             default:
                 updateType = Constants.UPDATE_TYPE_UNOFFICIAL;
+                break;
+            case Constants.HEX_RELEASETYPE_OFFICIAL:
+                updateType = Constants.UPDATE_TYPE_OFFICIAL;
                 break;
         }
         return updateType;
