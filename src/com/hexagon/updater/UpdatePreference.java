@@ -114,8 +114,11 @@ public class UpdatePreference extends Preference implements OnClickListener, OnL
             case "v1.":
                 mApi = "6.0.1";
                 break;
-            case "v2.":
+            case "v2.3":
                 mApi = "7.1.1";
+                break;
+            case "v2.4":
+                mApi = "7.1.2";
                 break;
             default:
                 mApi = "7.1.1";
